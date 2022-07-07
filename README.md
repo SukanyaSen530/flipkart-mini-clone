@@ -1,1 +1,1 @@
-# flipkart-mini-clone
+# Flipkart-mini-clone :)
