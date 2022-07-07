@@ -1,0 +1,104 @@
+{
+  "products": [
+    {
+      "id": "p1",
+      "src": "https://rukminim1.flixcart.com/image/580/696/kqv8vww0/dupatta/s/r/u/2-25-meters-black-rose-best-mart-original-imag4sdf7h8g3afc.jpeg?q=50",
+      "size": "S, M, L, XL",
+      "price": 600,
+      "discount": 5,
+      "for": "women",
+      "brand": "best mart",
+      "name": "Net embroidered salwar"
+    },
+    {
+      "id": "p2",
+      "src": "https://rukminim1.flixcart.com/image/580/696/l3j2cnk0/t-shirt/2/w/p/l-723-2-5-7-8-ftx-original-imagemgrpafdug8v.jpeg?q=50",
+      "size": "S, M, L, XL",
+      "price": 2400,
+      "discount": 8,
+      "for": "men",
+      "brand": "FTX",
+      "name": "Round neck solid t-shirts"
+    },
+    {
+      "id": "p3",
+      "src": "https://rukminim1.flixcart.com/image/580/696/l16rde80/sock/r/m/o/free-5-winget-5001-winget-original-imagct2cqgmhzghu.jpeg?q=50",
+      "size": "free",
+      "price": 145,
+      "discount": 0,
+      "for": "unisex",
+      "brand": "winget",
+      "name": "Ankle length socks"
+    },
+    {
+      "id": "p4",
+      "src": "https://rukminim1.flixcart.com/image/580/696/l4bn5ow0/track-pant/a/l/n/s-tr10-qfabrix-original-imagf8vsjc6zbqxq.jpeg?q=50",
+      "size": "S, M",
+      "price": 1500,
+      "discount": 10,
+      "for": "men",
+      "brand": "qfabrix",
+      "name": "Track pants"
+    },
+    {
+      "id": "p5",
+      "src": "https://rukminim1.flixcart.com/image/580/696/kfoapow0-0/shirt/1/3/i/s-hlsh009325-highlander-original-imafw2ghqzwrryn2.jpeg?q=50",
+      "size": "L, XL",
+      "price": 2900,
+      "discount": 20,
+      "for": "men",
+      "brand": "highlander",
+      "name": "Cheked blue shirt"
+    },
+    {
+      "id": "p6",
+      "src": "https://rukminim1.flixcart.com/image/580/696/khtghow0-0/kurta/6/i/g/s-kr-06-wine-kriska-original-imafxqutadagxnqh.jpeg?q=50",
+      "size": "M, L",
+      "price": 1000,
+      "discount": 2,
+      "for": "women",
+      "brand": "kriska",
+      "name": "Embroidered A-line Kurta"
+    },
+    {
+      "id": "p7",
+      "src": "https://rukminim1.flixcart.com/image/580/696/kjhgzgw0-0/t-shirt/h/s/2/xxl-tblhdful-d10-tripr-original-imafzfk2cxynenfd.jpeg?q=50",
+      "size": "S, M, L, XL",
+      "price": 600,
+      "discount": 5,
+      "for": "men",
+      "brand": "best mart",
+      "name": "Hooded Neck Black T-Shirt"
+    },
+    {
+      "id": "p8",
+      "src": "https://rukminim1.flixcart.com/image/580/696/kx9as280/top/f/2/p/m-klb-girls-shoppie-original-imag9r9gsfvxwsny.jpeg?q=50",
+      "size": "XL",
+      "price": 900,
+      "discount": 50,
+      "for": "women",
+      "brand": "shoppie",
+      "name": "Long sleeves top"
+    },
+    {
+      "id": "p9",
+      "src": "https://rukminim1.flixcart.com/image/580/696/kpzt7680/cap/s/g/w/free-66-alamos-original-imag43zjwhweugxy.jpeg?q=50",
+      "size": "free",
+      "price": 100,
+      "discount": 0,
+      "for": "unisex",
+      "brand": "ALAMOS",
+      "name": "Beenie"
+    },
+    {
+      "id": "p10",
+      "src": "https://rukminim1.flixcart.com/image/580/696/l071d3k0/dress/u/p/g/s-302tk8035-selvia-original-imagcf8enq5bydtp.jpeg?q=50",
+      "size": "S, M",
+      "price": 600,
+      "discount": 5,
+      "for": "women",
+      "brand": "selvia",
+      "name": "Women Sheath Beige Dress"
+    }
+  ]
+}
