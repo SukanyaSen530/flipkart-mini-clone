@@ -7,8 +7,6 @@ import { useProductContext } from "./context/ProductProvider";
 function App() {
   const { finalProducts } = useProductContext();
 
-  console.log(finalProducts);
-
   return (
     <main className="app">
       <Navbar />

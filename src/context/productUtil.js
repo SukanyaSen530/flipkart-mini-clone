@@ -26,13 +26,11 @@ const compareByDiscountPrice = (
 };
 
 const sortData = ({ filters: { sortPrice } }, data) => {
-  // if (sortPrice === "highToLow") {
-  //   return [...data].sort(compareByDiscountPrice);
-  // } else if (sortPrice === "lowToHigh") {
-  //   return [...data].sort(compareByDiscountPrice).reverse();
-  // } else
-
-  return data;
+  if (sortPrice === "highToLow") {
+    return [...data].sort(compareByDiscountPrice);
+  } else if (sortPrice === "lowToHigh") {
+    return [...data].sort(compareByDiscountPrice).reverse();
+  } else return data;
 };
 
 export { compose, filterData, sortData };
