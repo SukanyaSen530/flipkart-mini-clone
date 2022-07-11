@@ -1,0 +1,25 @@
+.navbar {
+  background-color: #2874f1;
+  display: flex;
+  padding: 0.5rem 15%;
+  align-items: center;
+  gap: 1rem;
+  height: 40px;
+
+  & > * {
+    flex: 1;
+    border: 1px solid black;
+  }
+
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__secondary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

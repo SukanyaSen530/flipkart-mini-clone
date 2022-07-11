@@ -2,12 +2,13 @@
   "products": [
     {
       "id": "p1",
-      "src": "https://rukminim1.flixcart.com/image/580/696/kqv8vww0/dupatta/s/r/u/2-25-meters-black-rose-best-mart-original-imag4sdf7h8g3afc.jpeg?q=50",
+      "src": "https://rukminim1.flixcart.com/image/580/696/kqfj1jk0/kurta/y/o/e/3xl-bb-rayon-kurta-322-sblack-kallar-original-imag4gyakuf86nef.jpeg?q=50",
       "size": "S, M, L, XL",
       "price": 600,
       "discount": 5,
-      "for": "women",
+      "idealFor": "women",
       "brand": "best mart",
+      "color": "black",
       "name": "Net embroidered salwar"
     },
     {
@@ -16,8 +17,9 @@
       "size": "S, M, L, XL",
       "price": 2400,
       "discount": 8,
-      "for": "men",
+      "idealFor": "men",
       "brand": "FTX",
+      "color": "multicolor",
       "name": "Round neck solid t-shirts"
     },
     {
@@ -26,8 +28,9 @@
       "size": "free",
       "price": 145,
       "discount": 0,
-      "for": "unisex",
+      "idealFor": "unisex",
       "brand": "winget",
+      "color": "multicolor",
       "name": "Ankle length socks"
     },
     {
@@ -36,8 +39,9 @@
       "size": "S, M",
       "price": 1500,
       "discount": 10,
-      "for": "men",
+      "idealFor": "men",
       "brand": "qfabrix",
+      "color": "multicolor",
       "name": "Track pants"
     },
     {
@@ -46,9 +50,10 @@
       "size": "L, XL",
       "price": 2900,
       "discount": 20,
-      "for": "men",
+      "idealFor": "men",
       "brand": "highlander",
-      "name": "Cheked blue shirt"
+      "color": "blue",
+      "name": "Checked blue shirt"
     },
     {
       "id": "p6",
@@ -56,9 +61,10 @@
       "size": "M, L",
       "price": 1000,
       "discount": 2,
-      "for": "women",
+      "idealFor": "women",
       "brand": "kriska",
-      "name": "Embroidered A-line Kurta"
+      "color": "maroon",
+      "name": "Embroidered A-line kurta"
     },
     {
       "id": "p7",
@@ -66,9 +72,10 @@
       "size": "S, M, L, XL",
       "price": 600,
       "discount": 5,
-      "for": "men",
+      "idealFor": "men",
+      "color": "black",
       "brand": "best mart",
-      "name": "Hooded Neck Black T-Shirt"
+      "name": "Hooded neck black t-shirt"
     },
     {
       "id": "p8",
@@ -76,8 +83,9 @@
       "size": "XL",
       "price": 900,
       "discount": 50,
-      "for": "women",
+      "idealFor": "women",
       "brand": "shoppie",
+      "color": "navy blue",
       "name": "Long sleeves top"
     },
     {
@@ -86,7 +94,8 @@
       "size": "free",
       "price": 100,
       "discount": 0,
-      "for": "unisex",
+      "idealFor": "unisex",
+      "color": "black",
       "brand": "ALAMOS",
       "name": "Beenie"
     },
@@ -96,9 +105,10 @@
       "size": "S, M",
       "price": 600,
       "discount": 5,
-      "for": "women",
+      "idealFor": "women",
       "brand": "selvia",
-      "name": "Women Sheath Beige Dress"
+      "color": "off white",
+      "name": "Women sheath beige dress"
     }
   ]
 }

@@ -1,0 +1,87 @@
+.product-card {
+  max-width: 18rem;
+  height: 25rem;
+  transition: 0.4s box-shadow;
+  position: relative;
+  overflow: hidden;
+
+  .wishlist-heart {
+    color: rgba(60, 60, 60, 0.5);
+    font-size: 1.8rem;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+
+  &:hover {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+
+  img {
+    object-fit: fill;
+    object-position: 50% 50%;
+    height: 20rem;
+    max-width: 95%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  &__content {
+    position: absolute;
+    bottom: -3rem;
+    background-color: white;
+    width: 100%;
+    transition: 0.4s bottom;
+    padding: 0 5px;
+    text-transform: capitalize;
+
+    &__brand {
+      text-transform: uppercase;
+      color: rgb(154, 154, 154);
+      font-weight: 500;
+    }
+
+    &__price {
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    &__color {
+      color: gray;
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+
+    p {
+      margin: 8px 0;
+    }
+  }
+
+  &:hover &__content {
+    bottom: 0;
+  }
+
+  .highlight {
+    color: gray;
+    font-weight: 500;
+  }
+  .small {
+    font-size: 0.9rem;
+  }
+
+  .product-price{
+    font-weight: 500;
+  }
+
+  .strike {
+    color: rgb(169, 169, 169);
+    text-decoration: line-through;
+  }
+
+  .product-discount {
+    font-size: 0.8em;
+    color: green;
+    text-transform: lowercase;
+    font-weight: 500;
+  }
+}

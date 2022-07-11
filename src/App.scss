@@ -1,0 +1,23 @@
+.app {
+  background: rgb(223, 223, 223);
+  height: inherit;
+
+  &__content {
+    display: flex;
+    height: calc(100% - (60px));
+    padding: 0.5rem 0.5rem 0;
+    gap: 0.5rem;
+  }
+
+  &__data {
+    background: white;
+    width: 100%;
+    padding: 1rem 0.5rem;
+  }
+
+  &__products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: 1rem;
+  }
+}

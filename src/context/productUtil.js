@@ -3,15 +3,16 @@ const compose =
   (state, data) =>
     fns.reduceRight((acc, curr) => curr(state, acc), data);
 
-const filterData = ({ filter: { brand, size, gender } }, data) => {
-  return (data || [])
-    .filter((product) => product.size === size)
-    .filter((product) => product.gender === gender)
-    .filter((product) =>
-      brand.length !== 0
-        ? brand && brand.includes(product.brand.toLowerCase())
-        : true
-    );
+const filterData = ({ filters: { brand, size, gender } }, data) => {
+  // return (data || [])
+  //   .filter((product) => product.size.includes(size))
+  //   .filter((product) => product.gender.includes(gender))
+  //   .filter((product) =>
+  //     brand.length !== 0
+  //       ? brand && brand.includes(product.brand.toLowerCase())
+  //       : true
+  //   );
+  return data;
 };
 
 const compareByDiscountPrice = (
@@ -24,12 +25,14 @@ const compareByDiscountPrice = (
   );
 };
 
-const sortData = ({ filter: { sortPrice } }, data) => {
-  if (sortPrice === "HIGH_TO_LOW|price") {
-    return [...data].sort(compareByDiscountPrice);
-  } else if (sortPrice === "LOW_TO_HIGH|price") {
-    return [...data].sort(compareByDiscountPrice).reverse();
-  } else return data;
+const sortData = ({ filters: { sortPrice } }, data) => {
+  // if (sortPrice === "highToLow") {
+  //   return [...data].sort(compareByDiscountPrice);
+  // } else if (sortPrice === "lowToHigh") {
+  //   return [...data].sort(compareByDiscountPrice).reverse();
+  // } else
+
+  return data;
 };
 
 export { compose, filterData, sortData };
