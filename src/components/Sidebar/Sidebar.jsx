@@ -1,17 +1,96 @@
 import { Accordian } from "../";
+import { productConstants } from "../../context/productConstants";
+import { useProductContext } from "../../context/ProductProvider";
 
 import "./sidebar.scss";
 
+const sizesArr = ["S", "M", "L", "XL", "XXL", "free"];
+const genderArr = ["men", "women", "unisex"];
+
 const Sidebar = () => {
+  const {
+    state: {
+      products,
+      filters: { brands, sizes, genders },
+    },
+    dispatch,
+  } = useProductContext();
+
+  console.log({ brands, sizes, genders });
+
+  const brandArr = [...products?.map((product) => product.brand)];
+
   return (
     <aside className="sidebar">
-      <h2>Filters</h2>
-      <div>
+      <div className="sidebar__header">
+        <h3>Filters</h3>
+        <button
+          onClick={() =>
+            dispatch({
+              type: productConstants.CLEAR_FILTERS,
+            })
+          }
+        >
+          Clear Filters
+        </button>
+      </div>
+      <div className="sidebar__body">
         <Accordian title="gender">
-          <p>Hiii</p>
+          {genderArr?.map((gender, index) => (
+            <div key={`${index}-s-${gender}`} className="checkboxes">
+              <input
+                type="checkbox"
+                id={gender}
+                name={gender}
+                checked={genders.includes(gender)}
+                onChange={() => {
+                  dispatch({
+                    type: productConstants.FILTER_BY_GENDER,
+                    payload: gender,
+                  });
+                }}
+              />
+              <label htmlFor={gender}>{gender}</label>
+            </div>
+          ))}
         </Accordian>
-        <Accordian title="size"></Accordian>
-        <Accordian title="brand"></Accordian>
+        <Accordian title="size">
+          {sizesArr?.map((size, index) => (
+            <div key={`${index}-g-${size}`} className="checkboxes">
+              <input
+                type="checkbox"
+                id={size}
+                name={size}
+                checked={sizes.includes(size)}
+                onChange={() => {
+                  dispatch({
+                    type: productConstants.FILTER_BY_SIZE,
+                    payload: size,
+                  });
+                }}
+              />
+              <label>{size}</label>
+            </div>
+          ))}
+        </Accordian>
+        <Accordian title="brand">
+          {brandArr?.map((brandName, index) => (
+            <div key={`${index}-b-${brandName}`} className="checkboxes">
+              <input
+                type="checkbox"
+                id={brandName}
+                name={brandName}
+                onChange={() => {
+                  dispatch({
+                    type: productConstants.FILTER_BY_BRAND,
+                    payload: brandName,
+                  });
+                }}
+              />
+              <label>{brandName}</label>
+            </div>
+          ))}
+        </Accordian>
       </div>
     </aside>
   );

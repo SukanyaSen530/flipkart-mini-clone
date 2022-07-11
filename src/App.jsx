@@ -15,9 +15,13 @@ function App() {
         <section className="app__data">
           <SortHeader />
           <div className="app__products">
-            {finalProducts.map((product) => (
-              <ProductCard {...product} key={product.id} />
-            ))}
+            {finalProducts.length > 0 ? (
+              finalProducts.map((product) => (
+                <ProductCard {...product} key={product.id} />
+              ))
+            ) : (
+              <p> No products found for current filter! </p>
+            )}
           </div>
         </section>
       </section>

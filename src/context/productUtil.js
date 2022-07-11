@@ -4,16 +4,15 @@ const compose =
     fns.reduceRight((acc, curr) => curr(state, acc), data);
 
 const filterData = ({ filters: { brand, size, gender } }, data) => {
-  // return (data || [])
-  //   .filter((product) => product.size.includes(size))
-  //   .filter((product) => product.gender.includes(gender))
+  return (data || [])
+    // .filter((product) => product.size.includes(size))
+    // .filter((product) => product.idealFor === gender)
   //   .filter((product) =>
   //     brand.length !== 0
   //       ? brand && brand.includes(product.brand.toLowerCase())
   //       : true
   //   );
-  return data;
-};
+};;
 
 const compareByDiscountPrice = (
   { discount: discountA, price: priceA },

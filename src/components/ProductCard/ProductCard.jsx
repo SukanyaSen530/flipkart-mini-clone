@@ -14,7 +14,7 @@ const ProductCard = ({
   return (
     <article className="product-card">
       <img src={src} alt={id} />
-      <i class="fa-solid fa-heart wishlist-heart"></i>
+      <i className="fa-solid fa-heart wishlist-heart"></i>
 
       <div className="product-card__content">
         <p className="product-card__content__brand">{brand}</p>

@@ -4,10 +4,10 @@ import productJson from "../data/db.json";
 const initialState = {
   products: productJson.products,
   filters: {
-    brand: "",
+    brands: [],
+    sizes: [],
+    genders: [],
     sortPrice: "",
-    size: "",
-    gender: "",
   },
 };
 
@@ -19,15 +19,34 @@ const productReducer = (state, { type, payload }) => {
         ...state,
         filters: {
           ...state.filters,
-          brand: state.filters.brand.includes.payloadBrand
+          brands: state.filters.brand.includes(payloadBrand)
             ? state.filters.brand.filter((brand) => brand !== payloadBrand)
             : [...state.filters.brand, payloadBrand],
         },
       };
-    case productConstants.FILTER_BY_GENDER:
-      return { ...state, filters: { ...state.filters, gender: payload } };
+    
     case productConstants.FILTER_BY_SIZE:
-      return { ...state, filters: { ...state.filters, size: payload } };
+      const payloadSize = payload?.toLowerCase() || "";
+      return {
+        ...state,
+        filters: {
+          ...state.filters,
+          sizes: state.filters.sizes.includes(payloadSize)
+            ? state.filters.sizes.filter((size) => size !== payloadSize)
+            : [...state.filters.sizes, payloadSize],
+        },
+      };
+    case productConstants.FILTER_BY_GENDER:
+      const payloadGender = payload?.toLowerCase() || "";
+      return {
+        ...state,
+        filters: {
+          ...state.filters,
+          sizes: state.filters.gender.includes(payloadGender)
+            ? state.filters.gender.filter((g) => g !== payloadGender)
+            : [...state.filters.gender, payloadGender],
+        },
+      };
     case productConstants.SORT_BY_PRICE:
       return { ...state, filters: { ...state.filters, sortPrice: payload } };
     case productConstants.CLEAR_FILTERS:
