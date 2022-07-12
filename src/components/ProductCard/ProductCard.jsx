@@ -28,7 +28,7 @@ const ProductCard = ({
           <span className={`${discount ? "strike" : "product-price"}`}>
             ₹{price}
           </span>
-          {discount && (
+          {discount !== 0 && (
             <span className="product-discount">{discount}% off</span>
           )}
         </p>
