@@ -30,7 +30,7 @@ const Navbar = () => {
             className=""
             xmlns="http://www.w3.org/2000/svg"
           >
-            <g fill="#2874F1" fill-rule="evenodd">
+            <g fill="#2874F1" fillRule="evenodd">
               <path
                 className="_34RNph"
                 d="m11.618 9.897l4.225 4.212c.092.092.101.232.02.313l-1.465 1.46c-.081.081-.221.072-.314-.02l-4.216-4.203"

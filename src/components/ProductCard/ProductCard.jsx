@@ -36,7 +36,11 @@ const ProductCard = ({
         <p className="product-card__content__color">{color}</p>
         <p className="small">
           <span className="highlight">Size </span>
-          {size}
+          {size?.map((s, index) => (
+            <span key={`${index}-pc-s-${size}`} className="size">
+              {s}
+            </span>
+          ))}
         </p>
         <p className="small">
           <span className="highlight">Ideal </span> {idealFor}

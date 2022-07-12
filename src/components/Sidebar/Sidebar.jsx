@@ -4,7 +4,7 @@ import { useProductContext } from "../../context/ProductProvider";
 
 import "./sidebar.scss";
 
-const sizesArr = ["S", "M", "L", "XL", "XXL", "free"];
+const sizesArr = ["s", "m", "l", "xl", "xxl", "free"];
 const genderArr = ["men", "women", "unisex"];
 
 const Sidebar = () => {
@@ -16,9 +16,7 @@ const Sidebar = () => {
     dispatch,
   } = useProductContext();
 
-  console.log({ brands, sizes, genders });
-
-  const brandArr = [...products?.map((product) => product.brand)];
+  const brandArr = [...new Set(products?.map((product) => product.brand))];
 
   return (
     <aside className="sidebar">
@@ -37,7 +35,7 @@ const Sidebar = () => {
       <div className="sidebar__body">
         <Accordian title="gender">
           {genderArr?.map((gender, index) => (
-            <div key={`${index}-s-${gender}`} className="checkboxes">
+            <div key={`${index}-g-${gender}`} className="checkboxes">
               <input
                 type="checkbox"
                 id={gender}
@@ -56,7 +54,7 @@ const Sidebar = () => {
         </Accordian>
         <Accordian title="size">
           {sizesArr?.map((size, index) => (
-            <div key={`${index}-g-${size}`} className="checkboxes">
+            <div key={`${index}-s-${size}`} className="checkboxes">
               <input
                 type="checkbox"
                 id={size}
@@ -80,6 +78,7 @@ const Sidebar = () => {
                 type="checkbox"
                 id={brandName}
                 name={brandName}
+                checked={brands.includes(brandName)}
                 onChange={() => {
                   dispatch({
                     type: productConstants.FILTER_BY_BRAND,

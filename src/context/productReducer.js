@@ -19,12 +19,12 @@ const productReducer = (state, { type, payload }) => {
         ...state,
         filters: {
           ...state.filters,
-          brands: state.filters.brand.includes(payloadBrand)
-            ? state.filters.brand.filter((brand) => brand !== payloadBrand)
-            : [...state.filters.brand, payloadBrand],
+          brands: state.filters.brands.includes(payloadBrand)
+            ? state.filters.brands.filter((brand) => brand !== payloadBrand)
+            : [...state.filters.brands, payloadBrand],
         },
       };
-    
+
     case productConstants.FILTER_BY_SIZE:
       const payloadSize = payload?.toLowerCase() || "";
       return {
@@ -36,15 +36,16 @@ const productReducer = (state, { type, payload }) => {
             : [...state.filters.sizes, payloadSize],
         },
       };
+
     case productConstants.FILTER_BY_GENDER:
       const payloadGender = payload?.toLowerCase() || "";
       return {
         ...state,
         filters: {
           ...state.filters,
-          sizes: state.filters.gender.includes(payloadGender)
-            ? state.filters.gender.filter((g) => g !== payloadGender)
-            : [...state.filters.gender, payloadGender],
+          genders: state.filters.genders.includes(payloadGender)
+            ? state.filters.genders.filter((g) => g !== payloadGender)
+            : [...state.filters.genders, payloadGender],
         },
       };
     case productConstants.SORT_BY_PRICE:

@@ -3,15 +3,19 @@ const compose =
   (state, data) =>
     fns.reduceRight((acc, curr) => curr(state, acc), data);
 
-const filterData = ({ filters: { brand, size, gender } }, data) => {
+const filterData = ({ filters: { brands, sizes, genders } }, data) => {
   return (data || [])
-    // .filter((product) => product.size.includes(size))
-    // .filter((product) => product.idealFor === gender)
-  //   .filter((product) =>
-  //     brand.length !== 0
-  //       ? brand && brand.includes(product.brand.toLowerCase())
-  //       : true
-  //   );
+    .filter((product) =>
+      genders?.length > 0 ? genders.includes(product.idealFor) : true
+    )
+    .filter((product) =>
+      sizes.length > 0
+        ? product.size.some((size) => sizes.includes(size))
+        : true
+    )
+    .filter((product) =>
+      brands.length > 0 ? brands.includes(product.brand) : true
+    );
 };;
 
 const compareByDiscountPrice = (

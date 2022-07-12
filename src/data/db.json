@@ -3,7 +3,7 @@
     {
       "id": "p1",
       "src": "https://rukminim1.flixcart.com/image/580/696/kqfj1jk0/kurta/y/o/e/3xl-bb-rayon-kurta-322-sblack-kallar-original-imag4gyakuf86nef.jpeg?q=50",
-      "size": "S, M, L, XL",
+      "size": ["s", "m", "l", "xl"],
       "price": 600,
       "discount": 5,
       "idealFor": "women",
@@ -14,18 +14,18 @@
     {
       "id": "p2",
       "src": "https://rukminim1.flixcart.com/image/580/696/l3j2cnk0/t-shirt/2/w/p/l-723-2-5-7-8-ftx-original-imagemgrpafdug8v.jpeg?q=50",
-      "size": "S, M, L, XL",
+      "size": ["s", "m", "l", "xl"],
       "price": 2400,
       "discount": 8,
       "idealFor": "men",
-      "brand": "FTX",
+      "brand": "ftx",
       "color": "multicolor",
       "name": "Round neck solid t-shirts"
     },
     {
       "id": "p3",
       "src": "https://rukminim1.flixcart.com/image/580/696/l16rde80/sock/r/m/o/free-5-winget-5001-winget-original-imagct2cqgmhzghu.jpeg?q=50",
-      "size": "free",
+      "size": ["free"],
       "price": 145,
       "discount": 0,
       "idealFor": "unisex",
@@ -36,7 +36,7 @@
     {
       "id": "p4",
       "src": "https://rukminim1.flixcart.com/image/580/696/l4bn5ow0/track-pant/a/l/n/s-tr10-qfabrix-original-imagf8vsjc6zbqxq.jpeg?q=50",
-      "size": "S, M",
+      "size": ["s", "m"],
       "price": 1500,
       "discount": 10,
       "idealFor": "men",
@@ -47,7 +47,7 @@
     {
       "id": "p5",
       "src": "https://rukminim1.flixcart.com/image/580/696/kfoapow0-0/shirt/1/3/i/s-hlsh009325-highlander-original-imafw2ghqzwrryn2.jpeg?q=50",
-      "size": "L, XL",
+      "size": ["l", "xl"],
       "price": 2900,
       "discount": 20,
       "idealFor": "men",
@@ -58,18 +58,18 @@
     {
       "id": "p6",
       "src": "https://rukminim1.flixcart.com/image/580/696/khtghow0-0/kurta/6/i/g/s-kr-06-wine-kriska-original-imafxqutadagxnqh.jpeg?q=50",
-      "size": "M, L",
+      "size": ["m", "l"],
       "price": 1000,
       "discount": 2,
       "idealFor": "women",
-      "brand": "kriska",
+      "brand": "selvia",
       "color": "maroon",
       "name": "Embroidered A-line kurta"
     },
     {
       "id": "p7",
       "src": "https://rukminim1.flixcart.com/image/580/696/kjhgzgw0-0/t-shirt/h/s/2/xxl-tblhdful-d10-tripr-original-imafzfk2cxynenfd.jpeg?q=50",
-      "size": "S, M, L, XL",
+      "size": ["s", "m", "l", "xl", "xxl"],
       "price": 600,
       "discount": 5,
       "idealFor": "men",
@@ -80,7 +80,7 @@
     {
       "id": "p8",
       "src": "https://rukminim1.flixcart.com/image/580/696/kx9as280/top/f/2/p/m-klb-girls-shoppie-original-imag9r9gsfvxwsny.jpeg?q=50",
-      "size": "XL",
+      "size": ["xl", "xxl"],
       "price": 900,
       "discount": 50,
       "idealFor": "women",
@@ -91,18 +91,18 @@
     {
       "id": "p9",
       "src": "https://rukminim1.flixcart.com/image/580/696/kpzt7680/cap/s/g/w/free-66-alamos-original-imag43zjwhweugxy.jpeg?q=50",
-      "size": "free",
+      "size": ["free"],
       "price": 100,
       "discount": 0,
       "idealFor": "unisex",
       "color": "black",
-      "brand": "ALAMOS",
+      "brand": "qfabrix",
       "name": "Beenie"
     },
     {
       "id": "p10",
       "src": "https://rukminim1.flixcart.com/image/580/696/l071d3k0/dress/u/p/g/s-302tk8035-selvia-original-imagcf8enq5bydtp.jpeg?q=50",
-      "size": "S, M",
+      "size": ["s", "m"],
       "price": 600,
       "discount": 5,
       "idealFor": "women",
