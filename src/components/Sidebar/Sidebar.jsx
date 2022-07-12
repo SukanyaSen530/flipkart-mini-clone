@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Accordian } from "../";
 import { productConstants } from "../../context/productConstants";
 import { useProductContext } from "../../context/ProductProvider";
@@ -8,6 +9,8 @@ const sizesArr = ["s", "m", "l", "xl", "xxl", "free"];
 const genderArr = ["men", "women", "unisex"];
 
 const Sidebar = () => {
+  const [filterSelected, setFilterSelected] = useState([]);
+
   const {
     state: {
       products,
@@ -18,19 +21,41 @@ const Sidebar = () => {
 
   const brandArr = [...new Set(products?.map((product) => product.brand))];
 
+  const filterOperations = (filterBy) => {
+    if (filterSelected.includes(filterBy)) {
+      setFilterSelected((prevList) => prevList.filter((f) => f !== filterBy));
+    } else {
+      setFilterSelected((prevList) => [...prevList, filterBy]);
+    }
+  };
+
+  console.log(filterSelected);
+
   return (
     <aside className="sidebar">
       <div className="sidebar__header">
-        <h3>Filters</h3>
-        <button
-          onClick={() =>
-            dispatch({
-              type: productConstants.CLEAR_FILTERS,
-            })
-          }
-        >
-          Clear Filters
-        </button>
+        <div className="sidebar__header__main">
+          <h3>Filters</h3>
+          <button
+            onClick={() => {
+              dispatch({
+                type: productConstants.CLEAR_FILTERS,
+              });
+              setFilterSelected([]);
+            }}
+            className="sidebar__header__clearbtn"
+          >
+            Clear All
+          </button>
+        </div>
+
+        {filterSelected.length > 0 ? (
+          <div className="sidebar__header__filters">
+            {filterSelected?.map((f, index) => (
+              <span key={`${f}-fil-side-${index}`}>{f}</span>
+            ))}
+          </div>
+        ) : null}
       </div>
       <div className="sidebar__body">
         <Accordian title="gender">
@@ -46,6 +71,7 @@ const Sidebar = () => {
                     type: productConstants.FILTER_BY_GENDER,
                     payload: gender,
                   });
+                  filterOperations(gender);
                 }}
               />
               <label htmlFor={gender}>{gender}</label>
@@ -65,6 +91,7 @@ const Sidebar = () => {
                     type: productConstants.FILTER_BY_SIZE,
                     payload: size,
                   });
+                  filterOperations(size);
                 }}
               />
               <label>{size}</label>
@@ -84,6 +111,7 @@ const Sidebar = () => {
                     type: productConstants.FILTER_BY_BRAND,
                     payload: brandName,
                   });
+                  filterOperations(brandName);
                 }}
               />
               <label>{brandName}</label>

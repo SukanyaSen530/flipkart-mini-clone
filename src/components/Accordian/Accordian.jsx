@@ -11,9 +11,9 @@ const Accordian = ({ title, children }) => {
         <h4 className="accordian__title">{title}</h4>
         <span className="accordian__action">
           {!open ? (
-            <i className="fa-solid fa-angle-down"></i>
+            <i className="fa-solid fa-angle-down icon"></i>
           ) : (
-            <i className="fa-solid fa-angle-up"></i>
+            <i className="fa-solid fa-angle-up icon"></i>
           )}
         </span>
       </div>

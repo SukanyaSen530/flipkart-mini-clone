@@ -1,6 +1,10 @@
 .accordian {
   font-size: 0.9rem;
 
+  .icon{
+    color: rgb(96, 96, 96);
+  }
+
   &__header {
     display: flex;
     justify-content: space-between;
