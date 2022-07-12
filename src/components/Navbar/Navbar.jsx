@@ -7,9 +7,9 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar__main">
         <figure>
-          <p>Flipkart</p>
-          <p>
-            explore plus{" "}
+          <p className="title">Flipkart</p>
+          <p className="secondary-title">
+            Explore <span> Plus </span>
             <img
               width="10"
               src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/plus_aef861.png"
@@ -18,7 +18,7 @@ const Navbar = () => {
           </p>
         </figure>
 
-        <div>
+        <div className="search-bar">
           <input
             type="search"
             placeholder="Search for products, brands and more"
@@ -47,11 +47,11 @@ const Navbar = () => {
       <div className="navbar__secondary">
         <button>Login</button>
 
-        <button>Become a seller</button>
+        <p>Become a Seller</p>
 
-        <button>More</button>
+        <p>More</p>
 
-        <button>
+        <p>
           <svg
             className="V3C5bO"
             width="14"
@@ -66,7 +66,7 @@ const Navbar = () => {
             ></path>
           </svg>{" "}
           Cart
-        </button>
+        </p>
       </div>
     </nav>
   );

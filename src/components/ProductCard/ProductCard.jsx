@@ -43,7 +43,7 @@ const ProductCard = ({
           ))}
         </p>
         <p className="small">
-          <span className="highlight">Ideal </span> {idealFor}
+          <span className="highlight">Ideal For</span> {idealFor}
         </p>
       </div>
     </article>

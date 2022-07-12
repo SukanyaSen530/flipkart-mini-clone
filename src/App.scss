@@ -1,11 +1,12 @@
 .app {
-  background: rgb(233, 233, 233);
+  background-color: #f1f3f6;
   min-height: 100vh;
 
   &__content {
     display: flex;
     padding: 0.8rem 0.8rem 0;
     gap: 0.8rem;
+    
   }
 
   &__data {
@@ -18,5 +19,6 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
     gap: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   }
 }

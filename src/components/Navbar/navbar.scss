@@ -1,25 +1,89 @@
 .navbar {
   background-color: #2874f1;
   display: flex;
-  padding: 0.5rem 15%;
+  padding: 0.5rem 12%;
   align-items: center;
-  gap: 1rem;
+  justify-content: space-between;
+  gap: 2rem;
   height: 40px;
 
   & > * {
     flex: 1;
-    border: 1px solid black;
   }
 
   &__main {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex: 0.6;
+    gap: 1rem;
   }
 
   &__secondary {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex: 0.4;
+
+    p {
+      color: white;
+      font-weight: 500;
+      font-size: 1.1rem;
+    }
+
+    button{
+      border: none;
+      background: white;
+      padding: 5px 2rem;
+      color: #2874f1;
+      font-weight: 600;
+      font-size: 1.05rem;
+    }
+  }
+
+  .title {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-style: italic;
+  }
+
+  .secondary-title {
+    color: white;
+    font-size: 10px;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    margin-top: 5px;
+
+    span {
+      color: yellow;
+    }
+  }
+
+  .search-bar {
+    flex: 1;
+    display: flex;
+    gap: 1rem;
+    background: white;
+    align-items: center;
+    padding-right: 1rem;
+    border-radius: 2px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+    input {
+      width: 100%;
+      border: none;
+      font-family: inherit;
+      padding: 10px;
+      border-radius: 2px;
+
+      &:focus {
+        outline: 0;
+      }
+    }
   }
 }
